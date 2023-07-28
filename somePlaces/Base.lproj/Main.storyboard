@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--My Places-->
         <scene sceneID="Nd7-jn-Rcz">
             <objects>
                 <tableViewController storyboardIdentifier="tableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gk4-QV-4Je" customClass="TableViewController" customModule="somePlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                             <outlet property="delegate" destination="Gk4-QV-4Je" id="LHf-bK-pZ9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="J8u-bg-u9l"/>
+                    <navigationItem key="navigationItem" title="My Places" id="J8u-bg-u9l"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hH-Th-Tad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

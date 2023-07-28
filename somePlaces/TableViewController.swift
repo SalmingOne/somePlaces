@@ -11,7 +11,7 @@ class TableViewController: UITableViewController {
 
     
     let names = [
-    "123","rt","das","12f3","a","gdf","h","a","dfsga",]
+    "Балкан Гриль","Бочка","Вкусные истории","Дастархан","Индокитай","Классик","Шок","Bonsai","Burger Heroes","Kitchen","Love&Life","Morris Pub","Sherlock Holmes","Speak Easy","X.O"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +27,14 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         cell.textLabel?.text = names[indexPath.row]
+        cell.imageView?.image = UIImage(named: names[indexPath.row])
+        cell.imageView?.layer.cornerRadius = cell.frame.height / 2
+        cell.imageView?.clipsToBounds = true
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
     }
     
 
